@@ -1,0 +1,45 @@
+ul {
+    line-height: 1em;
+    list-style: none;
+}
+
+li:before {
+    color: #739E3B;
+    content: "\2023";
+    font-size: 30px;
+
+}
+
+li:nth-child(2):before {
+  color: #B44B30;
+}
+
+li:nth-child(3):before {
+  color: #533B61;
+}
+
+li:nth-child(4):before {
+  color: #A9212F;
+}
+
+/* TO TOP NAVIGATION BUTTON */
+
+#toTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#toTopBtn:hover {
+    background-color: black; /* Add a dark-grey background on hover */
+}
