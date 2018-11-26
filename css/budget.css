@@ -7,6 +7,10 @@ ul {
     list-style: none;
 }
 
+p {
+    z-index: 99;
+}
+
 li:before {
     color: #739E3B;
     content: "\2023";
@@ -54,4 +58,16 @@ li:nth-child(4):before {
 
 #toTopBtn:hover {
     background-color: black; /* Add a dark-grey background on hover */
+}
+
+.triangle-left {
+    background-position: center left;
+    background-image: url(../img/triangle-left.png);
+    background-repeat: no-repeat;
+}
+
+.triangle-right {
+    background-position: center right;
+    background-image: url(../img/triangle-right.png);
+    background-repeat: no-repeat;
 }
