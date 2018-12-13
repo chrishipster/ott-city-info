@@ -76,7 +76,7 @@ body {
 hr {
   box-sizing: content-box;
   height: 0;
-  overflow: visible;
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -435,43 +435,51 @@ hr, {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  height:15px;
+  height:10px;
   background-color: #4b4b4b;
 }
 
 .environment{
+  width: 66%;
+  margin-left:0;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  height:15px;
+  height:10px;
   background-color: #739E3B;
 }
 
 .rural{
+  width: 66%;
+  margin-right: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  height:15px;
+  height:10px;
   background-color: #B44B30;
 }
 
 .protecting{
+  width: 66%;
+  margin-left:0;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  height:15px;
+  height:10px;
   background-color: #533B61;
 }
 
 .transit{
+  width: 66%;
+  margin-right: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  height:15px;
+  height:10px;
   background-color: #A9212F;
 }
 
@@ -666,6 +674,10 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.col-md-8 {
+  width: 66%;
 }
 
 .col {
@@ -4926,7 +4938,7 @@ input[type="button"].btn-block {
 }
 
 .jumbotron {
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
   margin-bottom: 0rem;
   background-color: #e9ecef;
   border-radius: 0.3rem;
@@ -4934,7 +4946,7 @@ input[type="button"].btn-block {
 
 @media (min-width: 576px) {
   .jumbotron {
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
   }
 }
 
