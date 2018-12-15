@@ -30,6 +30,9 @@ li:nth-child(4):before {
   color: #A9212F;
 }
 
+img { transition: all .3s ease-in-out; }
+img:hover { transform: scale(1.05); }
+
 /* ARROWS ON LINES */
 
 .line-container {
