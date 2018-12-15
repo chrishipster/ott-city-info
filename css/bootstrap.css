@@ -456,9 +456,7 @@ hr, {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
   height:10px;
-  background-color: #B44B30;
 }
 
 .protecting{
@@ -478,9 +476,7 @@ hr, {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
   height:10px;
-  background-color: #A9212F;
 }
 
 small,
@@ -608,6 +604,18 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.transit.container {
+  width: 100%;
+  margin-right: 0;
+  padding-right: 0px;
+}
+
+.rural.container {
+  width: 100%;
+  margin-right: 0;
+  padding-right: 0px;
 }
 
 @media (min-width: 576px) {
