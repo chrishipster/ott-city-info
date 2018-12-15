@@ -15,6 +15,7 @@
     <!-- Custom styles for this template -->
     <link href="css/navbar-top-fixed.css" rel="stylesheet">
     <link href="css/budget.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -22,28 +23,31 @@
     <button onclick="topFunction()" id="toTopBtn" title="Go to top">Top</button>
 
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-      <a class="navbar-brand" href="#">Budget 2018</a>
+      <a class="navbar-brand" href="#">City of Ottawa Budget 2018</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </nav>
 
     <main role="main" class="container">
-      <div id="Title" class="jumbotron bg-dark">
-        <h1>BUDGET 2018</h1>
-        <div class="line-container">
-            <span class="title line arrow-right"></span>
+       <div id="Title" class="jumbotron title-margin bg-dark">
+        <div class="row container no-right-margin">
+          <div class="col-md-4 logo d-none d-md-block"><img class="" src="img/logo-triangle.png" class="img-responsive" alt="lightbulb"></div>
+          <div class="col-md-4"><h1>BUDGET 2018</h1></div>
+          <div class="line-container col-md-8">
+              <span class="title line arrow-right"></span>
+            </div>
           </div>
-        <div class="row show-grid">
-          <div class="col-md-4"></div>
-            <p class="lead">
-            <ul id="list">
-            <li class="environment-li"> Environment</li>
-            <li class="rural-li"> Rural Communities</li>
-            <li class="protection-li"> Safe and Caring Communities</li>
-            <li class="transit-li"> Public Transportation</li>
-            </ul>
-            </p>
+          <div class="row title-list">
+            <div class="col-md-4"></div>
+              <p class="lead">
+              <ul id="list">
+              <li class="environment-li"> Environment</li>
+              <li class="rural-li"> Rural Communities</li>
+              <li class="protection-li"> Safe and Caring Communities</li>
+              <li class="transit-li"> Public Transportation</li>
+              </ul>
+              </p>
         </div>
       </div>
 
@@ -54,9 +58,9 @@
             <span class="environment line arrow-right"></span>
           </div>
         </div>
-        <div class="row">
+        <div class="row container no-right-margin">
           <div class="col-md-2"></div>
-          <div class="col-md-2"><img class="lightbulb float-right" src="img/lightbulb.png" class="img-responsive" alt="lightbulb"></div>
+          <div class="col-md-2"><img class="lightbulb" src="img/lightbulb.png" class="img-responsive" alt="lightbulb"></div>
           <div class="col-md-6">
             <p class="lead">
             <br>Energy retrofits of City buildings<br>
@@ -64,18 +68,19 @@
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-4">
+        <div class="row container no-right-margin">
+          <div class="col-md-3"></div>
+          <div class="col-md-3 d-block d-md-none"><img class="electric-car" src="img/electric-car.png" class="img-responsive" alt="electric car"></div>
+          <div class="col-md-3">
             <p class="lead">
             Green Fleet<br>
             <h3>$500,000</h3>
             </p>
           </div>
-          <div class="col-md-4"><img class="electric-car" src="img/electric-car.png" class="img-responsive" alt="electric car"></div>
+          <div class="col-md-3 d-none d-md-block"><img class="electric-car" src="img/electric-car.png" class="img-responsive" alt="electric car"></div>
         </div>
-        <div class="row">
-          <div class="col-md-4"><img class="trees" src="img/trees.png" class="img-responsive" alt="trees"></div>
+        <div class="row container no-right-margin">
+          <div id="trees" class="col-md-4"><img class="trees" src="img/trees.png" class="img-responsive" alt="trees"></div>
           <div class="col-md-4">
             <p class="lead">
             Tree program<br>
@@ -86,8 +91,8 @@
           </div>
           <div class="col-md-3"></div>
         </div>
-        <div class="row container">
-          <div class="col-md-2"></div>
+        <div class="row container no-right-margin">
+          <div class="col-md-3"></div>
           <div class="col-md-2"><img class="faucet" src="img/Faucet.png" class="img-responsive" alt="faucet"></div>
           <div class="col-md-4">
             <p class="lead">
@@ -96,35 +101,35 @@
             <h3>$202 million</h3>
             </p>
           </div>
-          <div class="col-md-4"><img class="manhole float-left" src="img/manhole.png" class="img-responsive" alt="manhole"></div>
+          <div class="col-md-3"><img class="manhole float-left d-none d-lg-block" src="img/manhole.png" class="img-responsive" alt="manhole"></div>
         </div>
       </div>
 
       <div >
-        <div id="Rural" class="jumbotron bg-dark triangle-left container">
+        <div id="Rural" class="fade-scroll-bottom jumbotron bg-dark triangle-left container">
           <div>
             <h2>Investing in our Rural Communities</h2>
             <div class="row no-right-margin">
               <div class="col-md-4"></div>
-              <div class="rural line-container float-right">
+              <div class="rural line-container">
                 <span class="rural line arrow-left"></span>
               </div>
             </div>
          </div>
-          <div class="row">
+          <div class="row no-right-margin rural-road container">
             <div class="col-md-2"></div>
-            <div class="col-md-3"><img class="bike-sign" src="img/bike-sign.png" class="img-responsive" alt="biking allowed sign"></div>
+            <div class="col-md-3"><img class="bike-sign d-none d-md-block" src="img/bike-sign.png" class="img-responsive" alt="biking allowed sign"></div>
             <div class="col-md-3">
               <p class="lead">
               <br>Renewal of City assets
               <h3>$12 million, including</h3>
               </p>
             </div>
-            <div class="col-md-4"><img class="road" src="img/Road.png" class="img-responsive" alt="curvy road with cars"></div>
+            <div id="road" class="road col-md-4"><img class="road" src="img/Road.png" class="img-responsive" alt="curvy road with cars"></div>
           </div>
-          <div class="row">
+          <div class="row container no-right-margin">
             <div class="col-md-4"></div>
-            <div class="col-md-4">
+            <div class="col-md-4 margin-up">
               <p class="lead">
               Road reconstruction<br>
               <h3>$2 million</h3>
@@ -132,9 +137,9 @@
             </div>
             <div class="col-md-4"></div>
           </div>
-          <div class="row no-right-margin">
-            <div class="col-md-6"><img class="bridge" src="img/bridge.png" class="img-responsive" alt="bridge with cars on it"></div>
-            <div class="col-md-3">
+          <div class="row container no-right-margin">
+            <div id="bridge" class="col-md-5"><img class="bridge" src="img/bridge.png" class="img-responsive" alt="bridge with cars on it"></div>
+            <div class="col-md-4">
               <p class="lead">
               <br>  
               Rehabilitation of bridges and
@@ -142,29 +147,30 @@
               <h3>$8 million</h3>
               </p>
             </div>
-            <div id="culvert" class="col-md-3"><img class="culvert" src="img/culvert.png" class="img-responsive" alt="culvert"></div>
+            <div id="culvert" class="col-md-3"><img class="culvert d-none d-md-block" src="img/culvert.png" class="img-responsive" alt="culvert"></div>
           </div>
         </div>
        </div> 
 
-      <div id="Protecting" class="jumbotron bg-light triangle-right">
+      <div id="Protecting" class="fade-scroll-bottom jumbotron bg-light triangle-right">
         <div>
           <h2>Protecting our safe and caring communities Environment</h2>
           <div class="line-container">
             <span class="protecting line arrow-right"></span>
           </div>
         </div>
-        <div class="row ambulance">
-          <div class="doctors col-md-4"><img class="" src="img/doctors.png" class="img-responsive" alt="doctors running"></div>
-          <div class="col-md-6 doctors">
+        <div class="row ambulance container">
+          <div class="doctors col-md-1 d-none d-lg-block"></div>
+          <div class="col-md-4"><img class="" src="img/doctors.png" class="img-responsive" alt="doctors running"></div>
+          <div class="col-md-5">
             <p class="lead">
-            <br><h3>14</h3> new paramedics<br>
+            <h3>14 New</h3>paramedics<br>
             </p>
           </div>
-          <div id="ambulance" class="ambulance col-md-2 float-right"><img class="ambulance" src="img/ambulance.png" class="img-responsive" alt="ambulance"></div>
+          <div id="ambulance" class="ambulance col-md-2 float-right"><img class="ambulance d-none d-lg-block" src="img/ambulance.png" class="img-responsive" alt="ambulance"></div>
         </div>
-        <div class="row">
-          <div class="col-md-4"></div>
+        <div class="row container no-right-margin">
+          <div class="col-md-3"></div>
           <div class="col-md-3">
             <p class="lead">
             <h3>$71 million</h3>
@@ -172,10 +178,11 @@
             or experiencing homelessness
             </p>
           </div>
-          <div class="col-md-5"><img class="houses" src="img/houses.png" class="img-responsive" alt="houses in a row"></div>
+          <div class="col-md-6"><img class="houses d-none d-md-block" src="img/houses.png" class="img-responsive" alt="houses in a row"></div>
         </div>
-        <div class="row">
-          <div class="col-md-6"><img class="park" src="img/park.png" class="img-responsive" alt="park"></div>
+        <div class="row container no-right-margin">
+          <div class="col-md-1"></div>
+          <div class="col-md-5"><img class="park" src="img/park.png" class="img-responsive" alt="park"></div>
           <div class="col-md-4">
             <p class="lead">
             <h3>$21.4 million</h3>
@@ -187,7 +194,7 @@
         </div>
       </div>
 
-      <div id="Transit" class="jumbotron bg-dark triangle-left">
+      <div id="Transit" class="fade-scroll-bottom jumbotron bg-dark triangle-left container">
         <h2>Investing in our Rural Communities</h2>
         <div class="row no-right-margin">
             <div class="col-md-4"></div>
@@ -195,8 +202,7 @@
                 <span class="transit line arrow-left"></span>
             </div>
         </div>
-
-        <div class="row">
+        <div class="row container no-right-margin">
           <div class="col-md-3"></div>
           <div class="col-md-3">
             <p class="lead">
@@ -207,21 +213,22 @@
             transit customers<br>
             </p>
           </div>
-          <div class="col-md-4"><img class="presto" src="img/presto.png" class="img-responsive" alt="presto"></div>
+          <div class="col-md-4"><img class="presto d-none d-md-block" src="img/presto.png" class="img-responsive" alt="presto"></div>
         </div>
-        <div class="row">
-          <div class="buses col-md-4 grow"><img class="grow" src="img/buses.png" class="img-responsive" alt="buses"></div>
+        <div class="row container no-right-margin">
+          <div class="col-md-2"></div>
+          <div class="buses col-md-4"><img class="grow" src="img/buses.png" class="img-responsive" alt="buses"></div>
           <div class="col-md-4">
-            <p class="lead">
+            <p class="lead pad-top-100">
             <h3>Multi-day Passes</h3>
             New 3, 5 and 7-day bus passes<br>
             </p>
           </div>
-          <div class="col-md-4"></div>
-        </div>
-        <div class="row">
           <div class="col-md-2"></div>
-          <div class="col-md-4">
+        </div>
+        <div class="row container no-right-margin">
+          <div class="col-md-2"></div>
+          <div class="pad-top-100 col-md-4">
             <p class="lead">
             <h3>Service Expansion</h3>
             to Growing Areas<br>
@@ -229,7 +236,7 @@
             up to 950,000 customer trips
             </p>
           </div>
-          <div class="col-md-6"><img class="expansion" src="img/expansion.png" class="img-responsive" alt="expansion"></div>
+          <div id="expansion" class="col-md-6"><img class="expansion" src="img/expansion.png" class="img-responsive" alt="expansion"></div>
         </div>
       </div>
 
@@ -249,6 +256,8 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="code.jquery.com/jquery.min.js"></script>
+    <script src="fade-scroll.js"></script>
     <script>// When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
 
