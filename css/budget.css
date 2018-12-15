@@ -102,6 +102,7 @@ img:hover { transform: scale(1.05); }
   }
 
   .title-list {
+    font-size: 18pt;
     margin-top: -200px;
   }
 
