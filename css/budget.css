@@ -76,6 +76,10 @@ li:nth-child(4):before {
   border-left: 20px solid #739E3B;
 }
 
+.no-right-margin{
+  margin-right: 0;
+}
+
 .rural.line {
   flex-grow: 1;
   height: 10px;
@@ -139,6 +143,32 @@ li:nth-child(4):before {
   border-right: 20px solid #A9212F;
 }
 
+#culvert {
+  overflow: hidden;
+}
+
+.ambulance {
+  overflow: hidden;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.doctors {
+  padding-left: 50px;
+}
+
+.park {
+  padding-left: 50px;
+}
+
+.buses {
+  padding-left: 50px;
+}
+
+.expansion {
+  margin-left: -15px;
+}
 
 /* TO TOP NAVIGATION BUTTON */
 

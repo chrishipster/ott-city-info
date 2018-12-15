@@ -483,7 +483,6 @@ hr, {
   background-color: #A9212F;
 }
 
-
 small,
 .small {
   font-size: 80%;
@@ -650,6 +649,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  padding-top: 25px;
 }
 
 .no-gutters {
