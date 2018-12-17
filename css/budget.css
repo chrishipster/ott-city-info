@@ -124,7 +124,19 @@ img:hover { transform: scale(1.05); }
 
   }
 
+  .bodydiv {
+  width:200px;
+  height:200px;
+  padding-bottom: 150px;
+  padding-right:50px;
+  }
+
+  .energy {
+  padding-left: 50px;
+  }
+
 }
+
 
 @media screen and (max-width: 767px) {
   
@@ -136,6 +148,22 @@ img:hover { transform: scale(1.05); }
   .rural.line-container {
     display: flex;
     width: 66%;
+  }
+
+  .bodydiv {
+  width:200px;
+  height:200px;
+  padding-bottom: 150px;
+  padding-right: 15px;
+  }
+
+  .energy {
+  padding-left: 0;
+  margin-top: -50px;
+  }
+
+  .electric-car {
+    padding-bottom: 25px;
   }
 
 }

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>City of Ottawa Budget 2018 Infographic</title>
 
     <!-- Bootstrap core CSS -->
@@ -15,6 +14,7 @@
     <!-- Custom styles for this template -->
     <link href="css/navbar-top-fixed.css" rel="stylesheet">
     <link href="css/budget.css" rel="stylesheet">
+    <script src="js/lottie.js" type="text/javascript"></script>
 
   </head>
 
@@ -32,7 +32,7 @@
     <main role="main" class="container">
        <div id="Title" class="jumbotron title-margin bg-dark">
         <div class="row container no-right-margin">
-          <div class="col-md-4 logo d-none d-md-block"><img class="" src="img/logo-triangle.png" class="img-responsive" alt="lightbulb"></div>
+          <div class="col-md-4 logo d-none d-md-block"><img class="" src="img/logo-triangle.png" class="img-responsive" alt="ottawa logo"></div>
           <div class="col-md-4"><h1>BUDGET 2018</h1></div>
           <div class="line-container col-md-8">
               <span class="title line arrow-right"></span>
@@ -59,9 +59,9 @@
           </div>
         </div>
         <div class="row container no-right-margin">
-          <div class="col-md-2"></div>
-          <div class="col-md-2"><img class="lightbulb" src="img/lightbulb.png" class="img-responsive" alt="lightbulb"></div>
-          <div class="col-md-6">
+          <div class="col-md-1"></div>
+          <div class="col-md-2 d-block bodydiv" style="width:200px;height:200px;"><div id="bodymovin" class="bodymovin" style="width:300%;height:300%;" alt="lightbulb"></div></div>
+          <div class="col-md-6 energy">
             <p class="lead">
             <br>Energy retrofits of City buildings<br>
             <h3>$1 million</h3>
@@ -69,15 +69,15 @@
           </div>
         </div>
         <div class="row container no-right-margin">
-          <div class="col-md-3"></div>
-          <div class="col-md-3 d-block d-md-none"><img class="electric-car" src="img/electric-car.png" class="img-responsive" alt="electric car"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-2 d-block d-md-none"><img class="electric-car" src="img/electric-car.png" class="img-responsive" alt="electric car"></div>
           <div class="col-md-3">
             <p class="lead">
             Green Fleet<br>
             <h3>$500,000</h3>
             </p>
           </div>
-          <div class="col-md-3 d-none d-md-block"><img class="electric-car" src="img/electric-car.png" class="img-responsive" alt="electric car"></div>
+          <div class="col-md-2 d-none d-md-block"><img class="electric-car" src="img/electric-car.png" class="img-responsive" alt="electric car"></div>
         </div>
         <div class="row container no-right-margin">
           <div id="trees" class="col-md-4"><img class="trees" src="img/trees.png" class="img-responsive" alt="trees"></div>
@@ -93,7 +93,7 @@
         </div>
         <div class="row container no-right-margin">
           <div class="col-md-3"></div>
-          <div class="col-md-2"><img class="faucet" src="img/Faucet.png" class="img-responsive" alt="faucet"></div>
+          <div class="col-md-2"><img class="faucet" src="img/faucet.png" class="img-responsive" alt="faucet"></div>
           <div class="col-md-4">
             <p class="lead">
             Upgrades to sewers, watermains<br>
@@ -125,7 +125,7 @@
               <h3>$12 million, including</h3>
               </p>
             </div>
-            <div id="road" class="road col-md-4"><img class="road" src="img/Road.png" class="img-responsive" alt="curvy road with cars"></div>
+            <div id="road" class="road col-md-4"><img class="road" src="img/road.png" class="img-responsive" alt="curvy road with cars"></div>
           </div>
           <div class="row container no-right-margin">
             <div class="col-md-4"></div>
@@ -273,6 +273,35 @@
     function topFunction() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }</script
-  </body>
+    }</script>
+    
+    <script>
+
+    var animData = {
+        wrapper: document.getElementById('bodymovin'),
+        animType: 'html',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'lamp.json'
+
+    };
+    var anim = bodymovin.loadAnimation(animData);
+    </script>
+
+    <script>
+    var elementStyle = document.getElementById("bodymovin").style;
+
+    elementStyle.position = "relative";
+    
+    if ($(window).width() < 768) {
+    elementStyle.left = "-200px";
+    } else {
+        elementStyle.left = "-50px";
+    } 
+    
+
+    </script>
+
+</body>
 </html>
