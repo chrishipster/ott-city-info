@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #dfd9c8;
+}
+
 h1 { text-align: center }
 
 h2 { text-align: center }
@@ -30,8 +38,11 @@ li:nth-child(4):before {
   color: #A9212F;
 }
 
-img { transition: all .3s ease-in-out; }
-img:hover { transform: scale(1.05); }
+img { transition: all .6s ease-in-out; }
+img:hover { transform: scale(1.1); }
+
+.img-none { transition: all .6s ease-in-out; }
+.img-none:hover { transform: scale(1); }
 
 .no-side-padding{
   padding-left: 0;
@@ -101,6 +112,10 @@ img:hover { transform: scale(1.05); }
 
   .expansion {
   margin-left: -15px;
+  }
+
+  .expansion-right {
+  margin-right: -15px;
   }
 
   .pad-top-100 {
@@ -275,7 +290,8 @@ img:hover { transform: scale(1.05); }
 
 .logo {
   position: relative;
-  margin-top: -50px;
+  margin-top: -75px;
+  margin-left: 0;
   z-index: 999;
   padding-left: 0;
   margin-left: 0;
@@ -328,4 +344,42 @@ img:hover { transform: scale(1.05); }
     background-image: url(../img/logo-triangle.png);
     background-repeat: no-repeat;
     overflow: visible;
+}
+
+
+
+.os-animation{
+  opacity: 0;
+}
+
+.os-animation.animated{
+    opacity: 1;
+}
+
+
+
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
 }
