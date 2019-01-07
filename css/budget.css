@@ -2,13 +2,41 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (min-width: 30em) {
+    
+    html {
+        font-size: 110%;
+    }
+    
+}
+
+@media only screen and (min-width: 60em) {
+    
+    html {
+        font-size: 120%;
+    }
+    
+}
+
+@media only screen and (min-width: 90em) {
+    
+    html {
+        font-size: 130%;
+    }
+    
+}
+
 body {
   background-color: #dfd9c8;
 }
 
-h1 { text-align: center }
+h1 { 
+  text-align: center 
+}
 
-h2 { text-align: center }
+h2 { 
+  text-align: center 
+}
 
 ul {
     line-height: 1em;
@@ -23,7 +51,6 @@ li:before {
     color: #739E3B;
     content: "\2023";
     font-size: 30px;
-
 }
 
 li:nth-child(2):before {
@@ -38,18 +65,12 @@ li:nth-child(4):before {
   color: #A9212F;
 }
 
-img { transition: all .6s ease-in-out; }
-img:hover { transform: scale(1.1); }
-
-.img-none { transition: all .6s ease-in-out; }
-.img-none:hover { transform: scale(1); }
-
 .no-side-padding{
   padding-left: 0;
   padding-right: 0;
 }
-
 /* ARROWS ON LINES */
+
 
 .line-container {
   display: flex;
@@ -130,13 +151,11 @@ img:hover { transform: scale(1.1); }
   .transit.line-container {
   display: flex;
   width: 66%;
-
   }
 
    .rural.line-container {
   display: flex;
   width: 66%;
-
   }
 
   .bodydiv {
@@ -363,16 +382,19 @@ img:hover { transform: scale(1.1); }
     visibility:hidden;
     visibility:visible\9;/*For old IE browsers IE6-8 */
 }
+
 .slideanim.slide {                  
     visibility: visible;                  
     animation: slide 1s;
 }
+
 .slideanim::after {
     /* useful when its child elements are float:left; */
     content: "";
     display: table;
     clear: both;
 }
+
 @keyframes slide {
     0% {
         opacity: 0;
