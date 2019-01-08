@@ -14,9 +14,6 @@
     <link href="css/navbar-top-fixed.css" rel="stylesheet">
     <link href="css/budget.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <script src="js/float-panel.js"></script>
-    <script src="js/lottie.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   </head>
@@ -30,6 +27,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <p><a href="index-fr.html" class="">FR</a></p>
     </nav>
 
     <main role="main" class="container">
@@ -56,7 +54,7 @@
 
       <!-- Protecting our Environment BEGIN -->
 
-      <div id="Environment" class="jumbotron bg-light triangle-right">
+      <div id="Environment" class="jumbotron bg-light triangle-right" role="environment">
           <h2>Protecting Our Environment</h2>
         <div>
           <div class="line-container">
@@ -65,7 +63,7 @@
         </div>
         <div class="row container no-right-margin">
           <div class="slideanim col-md-1"></div>
-          <div class="col-md-2 d-block bodydiv" style="width:200px;height:200px;"><div id="bodymovin" class="bodymovin" style="width:300%;height:300%;" alt="lightbulb"></div></div>
+          <div class="col-md-2 d-block bodydiv" style="width:300px;height:300px;"><div id="bodymovin" class="bodymovin" style="width:300%;height:300%;" alt="lightbulb"></div></div>
           <div class="col-md-6 energy">
             <p class="lead">
             <br>Energy retrofits of City buildings<br>
@@ -85,7 +83,8 @@
           <div class="slideanim col-md-2 d-none d-md-block"><img class="electric-car" src="svg/car.svg" alt="electric car"></div>
         </div>
         <div class="row container no-right-margin">
-          <div id="trees" class="slideanim col-md-4"><img class="trees" src="svg/tree.svg" alt="trees"></div>
+          <div class="slideanim col-md-4" style="width:300%;height:300%;"><div id="tree" style="width:300%;height:300%;" alt="trees"></div></div>
+          <!--<div id="trees" class="slideanim col-md-4"><img class="trees" src="svg/tree.svg" alt="trees"></div>-->
           <div class="col-md-4">
             <p class="lead">
             Tree program<br>
@@ -98,7 +97,7 @@
         </div>
         <div class="row container no-right-margin">
           <div class="col-md-3"></div>
-          <div class="slideanim col-md-2"><div id="watertap" class="faucet" alt="faucet"></div></div>
+          <div class="slideanim col-md-2"><div id="watertap" class="faucet" style="width:300%;height:300%;" alt="faucet"></div></div>
           <!--<div class="slideanim col-md-2"><img class="faucet" src="svg/watertap.svg" alt="faucet"></div>-->
           <div class="col-md-4">
             <p class="lead">
@@ -114,7 +113,7 @@
       <!-- Investing in our communities BEGIN -->
 
       <div >
-        <div id="Rural" class="fade-scroll-bottom jumbotron bg-dark triangle-left container">
+        <div id="Rural" class="fade-scroll-bottom jumbotron bg-dark triangle-left container" role="rural">
           <div>
             <h2>Investing in our Rural Communities</h2>
             <div class="row no-right-margin">
@@ -146,7 +145,7 @@
             <div class="col-md-4"></div>
           </div>
           <div class="row container no-right-margin">
-            <div id="bridge" class="slideanim col-md-5"><img class="bridge" src="svg/bridge.svg" alt="bridge with cars on it"></div>
+            <div class="slideanim col-md-5"><div id="bridge" style="width:300%;height:300%;" alt="bridge with cars on it"></div></div>
             <div class="col-md-4">
               <p class="lead">
               <br>  
@@ -162,16 +161,16 @@
 
       <!-- Protecting our environment BEGIN -->
 
-      <div id="Protecting" class="fade-scroll-bottom jumbotron bg-light triangle-right">
+      <div id="Protecting" class="fade-scroll-bottom jumbotron bg-light triangle-right" role="protecting">
         <div>
-          <h2>Protecting our safe and caring communities Environment</h2>
+          <h2>Protecting our safe and caring communities</h2>
           <div class="line-container">
             <span class="protecting line arrow-right"></span>
           </div>
         </div>
         <div class="row ambulance container">
           <div class="doctors col-md-1 d-none d-lg-block"></div>
-          <div class="col-md-4 d-block bodydiv slideanim"><div id="paramedics" style="width:300%;height:300%;" alt="paramedics"></div></div>
+          <div class="col-md-4 d-block bodydiv slideanim"><div id="paramedics" style="width:350%;height:350%;" alt="paramedics"></div></div>
           <!--<div class="col-md-4 slideanim"><img class="" src="svg/paramedics.svg" alt="doctors running"></div>-->
           <div class="col-md-5">
             <p class="lead">
@@ -193,7 +192,7 @@
         </div>
         <div class="row container no-right-margin">
           <div class="col-md-1"></div>
-          <div class="col-md-5 slideanim"><img class="park" src="svg/park.svg" alt="park"></div>
+          <div class="col-md-5 slideanim"><div id="park" style="width:350%;height:350%;" alt="park"></div></div>
           <div class="col-md-4">
             <p class="lead">
             <h3>$21.4 million</h3>
@@ -208,7 +207,7 @@
       <!-- Transit BEGIN -->
 
       <div>
-       <div id="Transit" class="fade-scroll-bottom jumbotron bg-dark triangle-left container">
+       <div id="Transit" class="fade-scroll-bottom jumbotron bg-dark triangle-left container" role="investing">
          <h2>Investing in our Rural Communities</h2>
           <div class="row no-right-margin container no-side-padding">
               <div class="col-md-4"></div>
@@ -227,15 +226,15 @@
               transit customers<br>
               </p>
            </div>
-           <div class="col-md-4 slideanim"><img class="grow presto d-none d-md-block" src="svg/prestocard.svg" alt="presto"></div>
+           <div class="col-md-4 slideanim"><img class="presto d-none d-md-block" src="svg/prestocard.svg" alt="presto"></div>
         </div>
           <div class="row container no-right-margin">
             <div class="col-md-2"></div>
-            <div class="buses col-md-4 slideanim"><img class="grow" src="svg/octranspo.svg" alt="buses"></div>
+            <div class="buses col-md-4 slideanim"><img src="svg/octranspo.svg" alt="buses"></div>
            <div class="col-md-4">
              <p class="lead pad-top-100">
               <h3>Multi-day Passes</h3>
-              New 3, 5 and 7-day bus passes<br>
+              New 3, 5 and 7-day bus passes
               </p>
             </div>
            <div class="col-md-2"></div>
@@ -250,7 +249,7 @@
               up to 950,000 customer trips
              </p>
             </div>
-            <div id="expansion" class="grow col-md-6 slideanim"><img class="expansion" src="svg/map.svg" alt="expansion"></div>
+            <div id="expansion" class="col-md-6 slideanim"><img class="expansion" src="svg/map.svg" alt="expansion"></div>
           </div>
         </div>
       </div>
@@ -268,9 +267,13 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https:/code.jquery.com/jquery.min.js"></script>
-    <script src="js/fade-scroll.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.js" type="text/javascript"></script> 
+    <script src="https:/code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/fade-scroll.js" type="text/javascript"></script>
+    <script src="js/float-panel.js" type="text/javascript"></script>
+    <script src="js/lottie.js" type="text/javascript"></script>
+
 
 
     <script>// When the user scrolls down 20px from the top of the document, show the button
@@ -298,7 +301,7 @@
         loop: true,
         prerender: true,
         autoplay: true,
-        path: 'json/lamp.json'
+        path: 'json/Bulb.json'
 
     };
     var anim = bodymovin.loadAnimation(animData);
@@ -309,10 +312,13 @@
 
     elementStyle.position = "relative";
 
+    elementStyle.height = '300px';
+    elementStyle.width = '300px';
+
     if ($(window).width() < 768) {
-    elementStyle.left = "-200px";
+    elementStyle.left = "0px";
     } else {
-        elementStyle.left = "-50px";
+        elementStyle.left = "-0px";
     } 
     
 
@@ -378,11 +384,104 @@
     elementStyle.marginTop = '0px';
     } else {
         elementStyle.left = "0px";
-        elementStyle.marginTop = '-0px';
+        elementStyle.marginTop = '-25px';
     } 
     
-
     </script>
+
+  <script>
+       // TREE ANIMATION
+    var animData = {
+        wrapper: document.getElementById('tree'),
+        animType: 'html',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'json/tree.json'
+
+    };
+    var anim = bodymovin.loadAnimation(animData);
+    </script>
+
+    <script>
+    var elementStyle = document.getElementById("tree").style;
+
+    elementStyle.position = "relative";
+
+    elementStyle.height = '300px';
+    elementStyle.width = '300px';
+
+    if ($(window).width() < 768) {
+    elementStyle.left = "0px";
+    elementStyle.marginTop = '0px';
+    } else {
+        elementStyle.left = "0px";
+        elementStyle.marginTop = '-75px';
+    } 
+  </script>
+  
+  <script>
+       // BRIDGE ANIMATION
+    var animData = {
+        wrapper: document.getElementById('bridge'),
+        animType: 'html',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'json/bridge.json'
+
+    };
+    var anim = bodymovin.loadAnimation(animData);
+    </script>
+
+    <script>
+    var elementStyle = document.getElementById("bridge").style;
+
+    elementStyle.position = "relative";
+
+    elementStyle.height = '300px';
+    elementStyle.width = '400px';
+
+    if ($(window).width() < 768) {
+    elementStyle.left = "0px";
+    elementStyle.marginTop = '0px';
+    } else {
+        elementStyle.left = "0px";
+        elementStyle.marginTop = '-50px';
+    } 
+  </script>
+
+  <script>
+       // Park ANIMATION
+    var animData = {
+        wrapper: document.getElementById('park'),
+        animType: 'html',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: 'json/park.json'
+
+    };
+    var anim = bodymovin.loadAnimation(animData);
+    </script>
+
+    <script>
+    var elementStyle = document.getElementById("park").style;
+
+    elementStyle.position = "relative";
+
+    elementStyle.height = '300px';
+    elementStyle.width = '300px';
+
+    if ($(window).width() < 768) {
+    elementStyle.left = "0px";
+    elementStyle.marginTop = '0px';
+    } else {
+        elementStyle.left = "0px";
+        elementStyle.marginTop = '-50px';
+    } 
+  </script>
+
 
 </body>
 </html>
